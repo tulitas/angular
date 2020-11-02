@@ -1,0 +1,28 @@
+input:hover{
+    background-color: royalblue;
+}
+input:focus{
+    background-color: greenyellow;
+}
+#name{
+    background-color: rgb(57, 57, 66);
+    border-radius: 10px;
+}
+#phone{
+    background-color: rgb(57, 57, 66);
+    border-radius: 10px;
+}
+#email{
+    background-color: rgb(57, 57, 66);
+    border-radius: 10px;
+}
+#date{
+    background-color: rgb(57, 57, 66);
+    border-radius: 10px;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}

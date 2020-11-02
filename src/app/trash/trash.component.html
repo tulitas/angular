@@ -1,0 +1,25 @@
+<span [ngStyle]="getStyle()">Hello dargais draugs</span>
+
+
+<ul>
+    <li *ngFor="let skaistumaNosaukums of arr" [ngClass]="checkForLiza(skaistumaNosaukums)"> {{skaistumaNosaukums}} </li>
+    </ul>
+
+    <div *ngIf="showLoading">
+        Loading .... <span *ngIf="couter>0">{{couter}}</span>
+
+    </div>
+
+    <div *ngIf="!showLoading">
+<button (click)="kadNospiezhamPaPilnam()">Push me</button>
+    </div>
+
+    <div *ngIf="masivs.length>0">
+        <h1>Tabula</h1>
+        <div *ngFor="let item of masivs">
+          <span class="b">Id: </span>{{item.id}}  
+          <span class="b">Name:</span> {{item.name}}
+          <span class="b">Email:</span>  {{item.email}}
+          <span class="b">Gender:</span>{{item.gender}}
+        </div>
+    </div>

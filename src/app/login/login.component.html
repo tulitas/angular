@@ -1,0 +1,102 @@
+<div class="container" style="margin-top: 15%;">
+    <!-- <div class="row">
+        <div class="col-sm-4 offset-sm-4">
+            <div class="row">
+                <div class="col-sm-12">
+                    <label class="mr-1">Login</label>
+                    <input type="text" id="loginId">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <label class="mr-1">Password</label>
+                    <input (keyup.enter)="method.onLoginClick()" type="password" id="paroleId">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button (click)="method.onLoginClick()">Login</button>
+                </div>
+            </div>
+            <div class="row" *ngIf="page.showError">
+                <div class="col-sm-12">
+                    {{page.errorMessage}}
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div> -->
+    <!-- <br> -->
+    <!-- <div>
+        <h3>pipe</h3>
+
+
+        <label for="control">Enter text
+        </label><br>
+        <input type="text" id="control">
+        <button (click)="method2.control()">Control</button><br>
+
+        <b>{{fromA | uppercase}}</b><br />
+        <b>{{fromAny | lowercase}}</b><br />
+        <!-- <b>{{control | method2}}</b><br /> -->
+<!-- </div> -->
+<!-- <br> --> -->
+
+
+
+<!-- <div class="row">
+        <label class="mr-1">Enter digits and split it`s by ":"!!!
+        </label>
+        <input type="text" id="digitsOrLetters">
+        <button (click)="method.checkDigit()">PUSH</button>
+    </div>
+    Max digit {{page.maxVal}}<br>
+    Index {{page.indexVal}}
+    <br>
+    to delete
+    <button (click)="onClickMe_Clicked()">Click me</button>
+
+    <div *ngIf="paraditCiparus">
+        123
+    </div>
+
+    <div *ngIf="!paraditCiparus">
+        abc
+    </div>
+    <app-trash *ngIf="paraditCiparus"></app-trash> -->
+
+
+    <div>
+        <form>
+            <div class="col-sm-4 offset-sm-4">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input type="text" placeholder="name" id="name" name="name" [ngClass]="valid">
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input type="text" placeholder="phone" id="phone">
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input type="email" placeholder="email" id="email">
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input type="date" id="date">
+                    </div>
+                </div>
+            </div>
+            <input type="button" value="push" (click)="valid()">
+
+        </form>
+    </div>
+</div>
+
+
