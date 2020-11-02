@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trash.component.css']
 })
 export class TrashComponent implements OnInit {
-  
 
-  constructor(private http:HttpClient) { }
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
     this.mainitCounteru();
@@ -49,34 +49,38 @@ export class TrashComponent implements OnInit {
 
       });
   }
-showLoading=true;
-couter=5;
-masivs=[];
-kadNospiezhamPaPilnam=()=>{
+  showLoading = true;
+  couter = 5;
+  masivs = [];
+  kadNospiezhamPaPilnam = () => {
 
-  this.showLoading=true;
-this.http.get("https://gorest.co.in/public-api/users")
-.toPromise().then((rezultats:{
-data:{
-id:number,
-name:string,
-email:string,
-gender:string
-}[]
-}) => {
-this.masivs = rezultats.data;
-})
-.finally(()=>{
-this.showLoading=false;
-});
-}
-  mainitCounteru=()=>{
-    if(this.couter>0)
-    setTimeout(() => {
-    this.couter--;
-    this.mainitCounteru();
-    }, 1000);
-    }
+    this.showLoading = true;
+    this.http.get("https://gorest.co.in/public-api/users")
+      .toPromise().then((rezultats: {
+        data: {
+          id: number,
+          name: string,
+          email: string,
+          gender: string
+        }[]
+      }) => {
+        this.masivs = rezultats.data;
+      })
+      .finally(() => {
+        this.showLoading = false;
+      });
+  }
+  postTest = () => {
+    alert
+      
+  }
+  mainitCounteru = () => {
+    if (this.couter > 0)
+      setTimeout(() => {
+        this.couter--;
+        this.mainitCounteru();
+      }, 1000);
+  }
 
 
 
